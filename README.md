@@ -1,6 +1,6 @@
-# Building And Contributing To Couchbase Mobile For Android
+# Building And Contributing To The Couchbase Server Python SDK
 
-This repository contains the "manifest" for Couchbase Mobile for Android, which is simply an XML file that instructs the "repo" tool where to find the multiple Git repositories containing the source code, and where to send patches to the Gerrit tool. If you want to build Couchbase Mobile from source, or make contributions, these instructions will get you started.
+This repository contains the "manifest" for the Couchbase Server Python SDK, which is simply an XML file that instructs the "repo" tool where to find the multiple Git repositories containing the source code, and where to send patches to the Gerrit tool. If you want to build Couchbase Mobile from source, or make contributions, these instructions will get you started.
 
 ## Get The "Repo" Tool
 
@@ -13,16 +13,14 @@ This repository contains the "manifest" for Couchbase Mobile for Android, which 
 
 Repo's help system works like git's. Type `repo help` to see a list of commands, and `repo help command` to get help on a particular command. (For some reason you have to be inside a directory managed by repo to be able to use help.)
 
-## Clone the Manifest And Couchbase Projects
+## Clone the Manifest And Sync This Project
 
-    $ mkdir Android-Couchbase
-    $ cd Android-Couchbase
-    $ repo init -u git@github.com:couchbaselabs/Android-Couchbase-manifest.git
+    $ mkdir couchbase-python-client
+    $ cd couchbase-python-client
+    $ repo init -u git@github.com:couchbaselabs/couchbase-python-client-manifest.git
     $ repo sync
 
-## Build
-
-See the instructions in `CouchbaseMobile/README.md`.
+## Staying Up To Date
 
 To pull in changes from upstream, use the command `repo sync`, then rebuild.
 
