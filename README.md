@@ -6,7 +6,7 @@ This repository contains the "manifest" for the Couchbase Server Python SDK, whi
 
 [Repo][1] is a tool developed for the Android build system for managing sets of related Git repositories and submitting patches [for review][2]. It's a single file that's easy to install:
 
-    $ curl http://android.git.kernel.org/repo > ~/bin/repo
+    $ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
     $ chmod a+x ~/bin/repo
 
 (This assumes `~/bin` already exists and is in your shell search path. If not, you can add it, or you can download `repo` somewhere else that's already in your `$PATH`.)
@@ -60,6 +60,6 @@ The reviewer(s) might find bugs or style issues that they want you to fix. If so
 5. `repo upload` again, to upload the new patch-set. This won't create a new web page on Gerrit, just add content to the existing one.
 6. You don't need to notify the reviewers; Gerrit will do that. Then they'll look at your new patch and either approve it or ask for more changes.
 
-[1]: http://source.android.com/source/version-control.html
+[1]: http://source.android.com/source/using-repo.html
 [2]: http://review.couchbase.org/
 [3]: http://youtu.be/PePSQtc5YPU?t=6m15s
